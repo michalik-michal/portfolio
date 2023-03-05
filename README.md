@@ -1,4 +1,4 @@
-This is my attempt to build my portfolio website using:
+This is my attempt to build portfolio website using:
 
 - HTML
 - Tailwind CSS
