@@ -1,4 +1,4 @@
-import SocialIcons from "@/components/SocialIcons";
+import SocialIcons from "@/components/common/SocialIcons";
 import Footer from "@/components/common/Footer";
 import NavBar from "@/components/NavBars/NavBar"
 import HeroSection from "@/components/HeroSection";
