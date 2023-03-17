@@ -18,6 +18,6 @@
       "@/*": ["./*"]
     }
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "pages/aboutme.tsx"],
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "pages/aboutme.tsx", "components/common/IphoneImage.jsx", "components/common/TechLabel.jsx", "components/HeroSection.jsx"],
   "exclude": ["node_modules"]
 }
