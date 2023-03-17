@@ -8,6 +8,7 @@ import SkiDay from "@/components/myprojects/SkiDay";
 import MyProjectsHeader from "@/components/myprojects/MyProjectsHeader";
 import SignIn from "@/components/myprojects/SignIn";
 import MoreProjectsButton from '@/components/common/MoreProjectsButton.jsx';
+import QuickMath from "@/components/myprojects/QuickMath";
 
 
 export default function Home() {
@@ -22,6 +23,7 @@ export default function Home() {
           <MyProjectsHeader/>
           <SkiDay/>
           <SignIn/>
+          <QuickMath/>
           <MoreProjectsButton/>
           <Footer/>
         </div>
