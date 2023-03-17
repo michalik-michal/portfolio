@@ -1,8 +1,6 @@
 import AboutMeNavBar from "@/components/NavBars/AboutMeNavbar.jsx";
 import SocialIcons from "@/components/common/SocialIcons";
 
-const gallupLink = "https://content.reportdeliverables.gallup.com/batch-service/job-results/SFPDFJobProcessor/pdf/signature-theme-501-0-78330497-20230311052130254000000-frePoL.pdf?AQICAHgzfZgYUqd6ZWXb2yF62L2U09mbhybZV3pxLV1pF/oRUQHcCSTKlxRMzG8yV7ZeKHFYAAABAjCB/wYJKoZIhvcNAQcGoIHxMIHuAgEAMIHoBgkqhkiG9w0BBwEwHgYJYIZIAWUDBAEuMBEEDOfkIUOgmEtIqy4mXwIBEICBuoXdfBkXsIcHzDBXAVEa3WH7uCWemYOzYfQO1FpUJbO/5Q1t+a4KrSCFIECwiDF+N1itqaVplJe9gYuSr26JyGGORQmeK1QPAZx4OAKfJuIe7bDK3/uY9Zrfq93e70PdKVepCfhAY7Pn4WjyNq3o4HNUuv1ZWUmUcYioN2aSRs7rx2Ovo5og2HsRjASTkag0z/Uo51ecjYpcYX5wLyKGBTEh4OKEPqlKX6DQlIllJ2gir3VKeE1EUFDtLg=="
-
 export default function AboutMeSection() {
     return(
         <div className="z-30 ">

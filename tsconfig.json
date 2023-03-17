@@ -18,6 +18,6 @@
       "@/*": ["./*"]
     }
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "pages/aboutme.tsx", "components/common/IphoneImage.jsx", "components/common/TechLabel.jsx", "components/HeroSection.jsx"],
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "pages/aboutme.tsx", "components/common/IphoneImage.jsx", "components/common/TechLabel.jsx", "components/HeroSection.jsx", "components/experience/ExperienceHeader.jsx", "components/experience/ExperienceSection.jsx", "components/common/SocialIcons.jsx", "components/myprojects/SkiDay.jsx", "components/NavBars/NavBar.jsx"],
   "exclude": ["node_modules"]
 }
