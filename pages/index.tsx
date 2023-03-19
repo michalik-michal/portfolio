@@ -15,7 +15,7 @@ export default function Home() {
   return (
       <div>
         <NavBar/>
-        <div className='h-screen bg-black text-white'>
+        <div className='bg-black text-white'>
           <SocialIcons/>
           <HeroSection/>
           <ExperienceHeader/>

@@ -4,7 +4,7 @@ import { ageCalculator } from "components/utils/ageCalculator.jsx";
  
 export default function HeroSection() {
     return(
-        <div name="home" className="h-full flex flex-col justify-center">
+        <div name="home" className="h-screen flex flex-col justify-center">
             <div className="flex flex-row justify-center">
               <img className="sm:w-96 sm:h-96 w-24 h-24 rounded-full" src="/me.jpeg"></img>
               <div className="pl-12">
