@@ -18,6 +18,7 @@ export default function Home() {
         <NavBar/>
         <Head>
         <link rel="shortcut icon" href="favicon.png" />
+        <title> Michał Michalik </title>
         </Head>
         <div className='bg-black text-white'>
           <SocialIcons/>
