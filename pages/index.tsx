@@ -9,12 +9,16 @@ import MyProjectsHeader from "@/components/myprojects/MyProjectsHeader";
 import SignIn from "@/components/myprojects/SignIn";
 import MoreProjectsButton from '@/components/common/MoreProjectsButton.jsx';
 import QuickMath from "@/components/myprojects/QuickMath";
+import Head from "next/head";
 
 
 export default function Home() {
   return (
       <div>
         <NavBar/>
+        <Head>
+        <link rel="shortcut icon" href="favicon.png" />
+        </Head>
         <div className='bg-black text-white'>
           <SocialIcons/>
           <HeroSection/>
