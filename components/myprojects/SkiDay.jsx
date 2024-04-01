@@ -7,7 +7,7 @@ export default function SkiDay() {
     return (
         <div name="my-projects" className="bg-black h-auto flex flex-col pt-28 ">
            <div className="flex flex-col-reverse sm:flex-row justify-center">
-            <div className="flex justify-center">
+            <div className="flex justify-center gap-5">
               <IphoneImage image={"/skiday1.png"}/>
               <IphoneImage image={"/skiday2.png"}/>
               <IphoneImage image={"/skiday3.png"}/>

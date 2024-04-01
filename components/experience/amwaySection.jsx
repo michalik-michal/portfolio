@@ -7,7 +7,7 @@ export default function AmwaySection() {
     return(
         <div name="experience" className="bg-black h-auto flex flex-col pt-28 sm:pb-[8rem] ">
            <div className="flex flex-col sm:flex-row justify-center"> 
-           <div className="flex justify-center">
+           <div className="flex justify-center gap-5">
               <IphoneImage image={"/amway1.png"}/>
               <IphoneImage image={"/amway2.png"}/>
               <IphoneImage image={"/amway3.png"}/>

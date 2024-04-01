@@ -11,6 +11,7 @@ import MoreProjectsButton from '@/components/common/MoreProjectsButton.jsx';
 import QuickMath from "@/components/myprojects/QuickMath";
 import Head from "next/head";
 import AmwaySection from "@/components/experience/amwaySection";
+import Nitch from "@/components/myprojects/Nitch";
 
 
 export default function Home() {
@@ -29,8 +30,9 @@ export default function Home() {
           <FootballCoSection/>
           <MyProjectsHeader/>
           <SkiDay/>
-          <SignIn/>
+          <Nitch/>
           <QuickMath/>
+          <SignIn/>
           <MoreProjectsButton/>
           <Footer/>
         </div>

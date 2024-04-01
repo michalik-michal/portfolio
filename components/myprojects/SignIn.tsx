@@ -18,7 +18,7 @@ export default function SignIn() {
                 <TechLabel text="SwiftUI"/>
               </div>
             </div>
-            <div className="flex justify-center">
+            <div className="flex justify-center gap-5">
               <IphoneImage image={"/SignIn1.png"}/>
               <IphoneImage image={"/SignIn2.png"}/>
               <IphoneImage image={"/SignIn3.png"}/>

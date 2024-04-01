@@ -25,7 +25,7 @@ export default function FootballCoSection() {
                 <TechLabel text="KMM"/>
               </div>
             </div>
-            <div className="flex justify-center">
+            <div className="flex justify-center gap-5">
               <IphoneImage image={"/goal1.png"}/>
               <IphoneImage image={"/goal2.png"}/>
               <IphoneImage image={"/goal3.png"}/>
