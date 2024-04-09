@@ -6,7 +6,7 @@ import { FaGithub } from "react-icons/fa";
 
 export default function SignIn() {
     return (
-        <div  className="bg-black h-auto flex flex-col pt-24">
+        <div  className="bg-black h-auto flex flex-col pt-48 pb-16">
            <div className="flex flex-col sm:flex-row justify-center">
             <div className="pr-12 px-8">
             <div className="pr-12 flex row">

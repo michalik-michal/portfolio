@@ -5,7 +5,7 @@ import { FaAppStoreIos } from "react-icons/fa"
 
 export default function FootballCoSection() {
     return(
-        <div name="experience" className="bg-black h-auto flex flex-col sm:pb-[8rem] ">
+        <div name="experience" className="bg-black h-auto flex flex-col sm:pb-[8rem] pt-24 ">
            <div className="flex flex-col sm:flex-row justify-center"> 
             <div className="pr-12 px-8">
             <div className="pr-12  flex flex-row">

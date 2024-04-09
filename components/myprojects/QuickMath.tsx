@@ -5,7 +5,7 @@ import quickMathText from "./quickmathText"
 
 export default function QuickMath() {
     return (
-        <div className="bg-black h-auto flex flex-col pt-[8rem] sm:h-5/6">
+        <div className="bg-black h-auto flex flex-col sm:h-5/6 pt-48">
         <div className="flex flex-col-reverse sm:flex-row justify-center">
          <div className="flex justify-center gap-5">
            <IphoneImage image={"/qm1.png"}/>
