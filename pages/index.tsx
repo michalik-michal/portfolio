@@ -29,8 +29,8 @@ export default function Home() {
           <AmwaySection/>
           <FootballCoSection/>
           <MyProjectsHeader/>
-          <SkiDay/>
           <Nitch/>
+          <SkiDay/>
           <QuickMath/>
           <SignIn/>
           <MoreProjectsButton/>
