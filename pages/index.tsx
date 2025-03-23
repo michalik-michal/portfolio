@@ -24,7 +24,6 @@ export default function Home() {
         </Head>
         <div className='bg-black text-white'>
           <SocialIcons/>
-          <HeroSection/>
           <ExperienceHeader/>
           <AmwaySection/>
           <FootballCoSection/>
