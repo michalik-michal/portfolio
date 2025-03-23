@@ -30,11 +30,6 @@ export default function Home() {
         <div style={{ width: '100vw', height: '90vh', maxWidth: '2400px' }}>
           <TextHoverEffect 
             text="i'ts coming..." 
-            width="100%" 
-            height="100%" 
-            viewBox="0 0 100 70"
-            fontSize="30vw"
-            duration={0.2}
           />
         </div>
       </main>
