@@ -1,17 +1,3 @@
-import SocialIcons from "@/components/common/SocialIcons";
-import Footer from "@/components/common/Footer";
-import NavBar from "@/components/NavBars/NavBar"
-import HeroSection from "@/components/HeroSection";
-import FootballCoSection from "@/components/experience/footballcoSection";
-import ExperienceHeader from "@/components/experience/ExperienceHeader";
-import SkiDay from "@/components/myprojects/SkiDay";
-import MyProjectsHeader from "@/components/myprojects/MyProjectsHeader";
-import SignIn from "@/components/myprojects/SignIn";
-import MoreProjectsButton from '@/components/common/MoreProjectsButton.jsx';
-import QuickMath from "@/components/myprojects/QuickMath";
-import Head from "next/head";
-import AmwaySection from "@/components/experience/amwaySection";
-import Nitch from "@/components/myprojects/Nitch";
 import { TextHoverEffect } from "@/components/common/text-hover-effect";
 import { TbMail } from "react-icons/tb";
 import { toast, Toaster } from "react-hot-toast";
@@ -27,9 +13,9 @@ export default function Home() {
       <Toaster position="top-center" />
       
       <main className="flex-1 flex items-center justify-center">
-        <div style={{ width: '100vw', height: '90vh', maxWidth: '2400px' }}>
+        <div style={{ width: '150vw', height: '20vw', maxWidth: '1500px' }}>
           <TextHoverEffect 
-            text="i'ts coming..." 
+            text="under construction..." 
           />
         </div>
       </main>
