@@ -1,6 +1,7 @@
 import Head from 'next/head';
 import { useState, FormEvent, useEffect } from 'react';
 import { motion } from 'framer-motion';
+import { toast, Toaster } from 'react-hot-toast';
 
 export default function DietetykaPage() {
   const [contactEmail, setContactEmail] = useState('');
@@ -12,12 +13,18 @@ export default function DietetykaPage() {
     setContactEmail('');
   };
 
+  const handleCopyEmail = (email: string) => {
+    navigator.clipboard.writeText(email);
+    toast.success(`Email skopiowany do schowka`);
+  };
+
   return (
     <div className="min-h-screen bg-gradient-to-b from-green-50 to-white overflow-hidden">
       <Head>
         <title>AI dla Dietetyków - Innowacyjne Rozwiązania</title>
         <meta name="description" content="Innowacyjne rozwiązania AI dla branży dietetycznej" />
       </Head>
+      <Toaster position="top-center" />
 
       {/* Hero Section */}
       <header className="relative bg-gradient-to-r from-green-600 to-green-500 text-white overflow-hidden">
@@ -282,35 +289,49 @@ export default function DietetykaPage() {
               viewport={{ once: true }}
               className="text-center mb-8"
             >
-              <div className="flex justify-center mb-6">
-                <img 
-                  src="/me.jpeg" 
-                  alt="Michał Michalik" 
-                  className="h-28 w-28 rounded-full object-cover border-4 border-green-500 shadow-lg"
-                />
+              <div className="flex justify-center mb-6 space-x-6">
+                <div className="text-center">
+                  <img 
+                    src="/me.jpeg" 
+                    alt="Michał Michalik" 
+                    className="h-28 w-28 rounded-full object-cover border-4 border-green-500 shadow-lg mx-auto"
+                  />
+                  <p className="mt-2 font-medium text-gray-800">Michał</p>
+                </div>
+                <div className="text-center">
+                  <img 
+                    src="/jan.jpeg" 
+                    alt="Jan" 
+                    className="h-28 w-28 rounded-full object-cover border-4 border-green-500 shadow-lg mx-auto"
+                  />
+                  <p className="mt-2 font-medium text-gray-800">Jan</p>
+                </div>
               </div>
               <h2 className="text-3xl font-bold mb-4 text-gray-800">Skontaktuj się z nami</h2>              
-              <div className="flex items-center justify-center mt-8">
-                <svg xmlns="http://www.w3.org/2000/svg" className="h-7 w-7 text-green-600 mr-3" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
-                </svg>
-                <p className="text-xl font-medium text-gray-800">michalpiotr.michalik@gmail.com</p>
+              <div className="flex flex-col space-y-4">
+                <div 
+                  className="flex items-center justify-center cursor-pointer hover:text-green-600 transition-colors"
+                  onClick={() => handleCopyEmail('michalpiotr.michalik@gmail.com')}
+                >
+                  <svg xmlns="http://www.w3.org/2000/svg" className="h-7 w-7 text-green-600 mr-3" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+                  </svg>
+                  <p className="text-xl font-medium text-gray-800">michalpiotr.michalik@gmail.com</p>
+                </div>
+                <div 
+                  className="flex items-center justify-center cursor-pointer hover:text-green-600 transition-colors"
+                  onClick={() => handleCopyEmail('wydrojan@gmail.com')}
+                >
+                  <svg xmlns="http://www.w3.org/2000/svg" className="h-7 w-7 text-green-600 mr-3" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+                  </svg>
+                  <p className="text-xl font-medium text-gray-800">wydrojan@gmail.com</p>
+                </div>
               </div>
               
-              <motion.button
-                whileHover={{ scale: 1.05 }}
-                whileTap={{ scale: 0.95 }}
-                onClick={() => {
-                  navigator.clipboard.writeText('michalpiotr.michalik@gmail.com');
-                  alert('Email skopiowany do schowka!');
-                }}
-                className="mt-6 bg-green-600 text-white py-3 px-6 rounded-lg font-medium hover:bg-green-700 transition shadow-lg inline-flex items-center"
-              >
-                <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 5H6a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2v-1M8 5a2 2 0 002 2h2a2 2 0 002-2M8 5a2 2 0 012-2h2a2 2 0 012 2m0 0h2a2 2 0 012 2v3m2 4H10m0 0l3-3m-3 3l3 3" />
-                </svg>
-                Kopiuj adres email
-              </motion.button>
+              <div className="mt-2 text-sm text-gray-500">
+                Kliknij email, aby go skopiować
+              </div>
             </motion.div>
           </div>
         </div>
