@@ -53,7 +53,14 @@ export default function Home() {
           <div className="text-gray-500 text-sm space-y-1">
             <p>Address</p>
             <p>Piotra Borowego 35, Kraków 30-215</p>
-            <p>NIP: 6772519863</p>
+            <a
+              href="https://aleo.com/pl/firma/michal-michalik508"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="underline hover:text-gray-300 transition-colors"
+            >
+              NIP: 6772519863
+            </a>
           </div>
         </footer>
       </div>
